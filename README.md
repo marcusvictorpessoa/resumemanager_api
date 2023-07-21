@@ -23,7 +23,7 @@
 
 3. Após ativar o Virtual Env, baixe as dependências do projeto:
 
-    ````
+    ```
     pip install -r requirements.txt
     ```
 
