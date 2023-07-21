@@ -9,12 +9,14 @@
 
 1. Após clonar o projeto entre na pasta:
 
-    > cd resumemanager_api
+    ```
+    cd resumemanager_api
+    ```
 
 2. crie o ambiente virtual:
 
     ```
-        python -m venv .
+    python -m venv .
     ```
 
 * Verificar se o arquivo "pyvenv.cfg" no campo "version" é igual a versão 3.11.4
@@ -22,31 +24,31 @@
 3. Após ativar o Virtual Env, baixe as dependências do projeto:
 
     ````
-        pip install -r requirements.txt
+    pip install -r requirements.txt
     ```
 
 4. Rode os comandos para criar as migrações:
 
     ```
-    	python manage.py makemigrations
+    python manage.py makemigrations
     ```
 
 5. Rode os comandos para executar as migrações:
 
     ```
-        python manage.py migrate
+    python manage.py migrate
     ```
 
 6. Crie o usuário Admin:
 
     ```
-        python manage.py createsuperuser
+    python manage.py createsuperuser
     ```
 
 7. Rode o projeto:
 
     ```
-        python manage.py runserver
+    python manage.py runserver
     ```
 
 * Acessar o [Sistema Admin](http://localhost:8000/admin/) e logue com o usuário Admin criado.
