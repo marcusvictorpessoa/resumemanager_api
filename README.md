@@ -7,31 +7,49 @@
 
 * Para linux, substituir comando python por python3, se o python2 estiver instalado
 
-1. Após clonar o projeto entre na pasta e crie o ambiente virtual:
+1. Após clonar o projeto entre na pasta:
 
     > cd resumemanager_api
-    > python -m venv .
+
+2. crie o ambiente virtual:
+
+    ```
+        python -m venv .
+    ```
 
 * Verificar se o arquivo "pyvenv.cfg" no campo "version" é igual a versão 3.11.4
 
-2. Após ativar o Virtual Env, baixe as dependências do projeto:
+3. Após ativar o Virtual Env, baixe as dependências do projeto:
 
-    > pip install -r requirements.txt
+    ````
+        pip install -r requirements.txt
+    ```
 
-3. Rode os comandos para executar as migrações:
+4. Rode os comandos para criar as migrações:
 
-    > python manage.py makemigrations
-    > python manage.py migrate
+    ```
+    	python manage.py makemigrations
+    ```
 
-4. Crie o usuário Admin:
+5. Rode os comandos para executar as migrações:
 
-    > python manage.py createsuperuser
+    ```
+        python manage.py migrate
+    ```
 
-5. Rode o projeto:
+6. Crie o usuário Admin:
 
-    > python manage.py runserver
+    ```
+        python manage.py createsuperuser
+    ```
 
-* Acessar o [Sistema Admin](http://localhost:8000/admin/)
+7. Rode o projeto:
+
+    ```
+        python manage.py runserver
+    ```
+
+* Acessar o [Sistema Admin](http://localhost:8000/admin/) e logue com o usuário Admin criado.
 
 ### Rotas
 
