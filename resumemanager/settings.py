@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-qviic^c=_3o*@)fl#!93-re9%!euty#05=c9au0yn-43hrh(pm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+CORS_ORIGIN_ALLOW_ALL = True
+
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -50,6 +52,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -148,8 +151,8 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.UserRateThrottle',
     ),
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '3/minute',
-        'user': '10/minute'
+        'anon': '7/minute',
+        'user': '30/minute'
     }
 }
 

@@ -13,6 +13,8 @@ class CandidateSerializer(serializers.ModelSerializer):
             'experience_area',
             'resume',
             'resume_avaliation',
+            'selective_process',
+            'result',
             'note',
             'created_at',
             'updated_at',
